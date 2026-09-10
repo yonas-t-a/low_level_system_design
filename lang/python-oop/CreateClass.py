@@ -7,6 +7,19 @@ class Person:
         self.name = name
         self.age = age
 
+    def getName(self):
+        return self.name
+
+    def getAge(self):
+        return self.age
+
+    def setName(self, newName):
+        self.name = newName
+
+    def setAge(self, newAge):
+        self.age = newAge
+
+
 
 
 if __name__ == "__main__":
