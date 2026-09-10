@@ -13,8 +13,17 @@ class BankAccount:
         else:
             print("Insufficient funds")
 
-    def get_balance(self):
-        print(self.__balance)
+    # python getter
+    @property
+    def balance(self):
+        return self.__balance
+
+    # python setter
+    @balance.setter
+    def balance(self, value):
+        self.__balance = value
+
+
 
 if __name__ == "__main__":
     account =  BankAccount(5000, True)
@@ -28,8 +37,12 @@ if __name__ == "__main__":
     print(account._BankAccount__balance)
 
     account.depoite(5000)
-    account.get_balance()
+    print(account.balance)
     account.withdraw(3000)
-    account.get_balance()
+    print(account.balance)
+
+    account.balance = 7687
+    print(account.balance)
+
 
         
