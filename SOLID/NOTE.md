@@ -1,1 +1,0 @@
-# SOLID for each lang

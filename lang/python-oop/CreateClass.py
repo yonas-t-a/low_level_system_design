@@ -21,8 +21,21 @@ class Person:
 
 
 
-
 if __name__ == "__main__":
     person = Person("Tom", 40)
     print(person.name)
     print(person.age)
+    # get the name and age via setter and getter
+
+    def callGetters():
+        name = person.getName()
+        age = person.getAge()
+
+        print(f'name = {name} \n Age = {age}')
+
+    callGetters()
+
+    person.setName("Alice")
+    person.setAge(50)
+
+    callGetters()
