@@ -12,16 +12,16 @@ class Person:
         self.name = name
         self.age = age
 
-    def getName(self):
+    def get_name(self):
         return self.name
 
-    def getAge(self):
+    def get_age(self):
         return self.age
 
-    def setName(self, newName):
+    def set_name(self, newName):
         self.name = newName
 
-    def setAge(self, newAge):
+    def set_age(self, newAge):
         self.age = newAge
 
 
