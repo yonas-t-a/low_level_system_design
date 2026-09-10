@@ -35,14 +35,14 @@ if __name__ == "__main__":
     # get the name and age via setter and getter
 
     def callGetters():
-        name = person.getName()
-        age = person.getAge()
+        name = person.get_name()
+        age = person.get_age()
 
         print(f'name = {name} \n Age = {age}')
 
     callGetters()
 
-    person.setName("Alice")
-    person.setAge(50)
+    person.set_name("Alice")
+    person.set_age(50)
 
     callGetters()
